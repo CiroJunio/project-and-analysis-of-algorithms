@@ -1,3 +1,4 @@
+#pragma once  // <-- ISSO É OBRIGATÓRIO
 #include <string>
 
 struct Transaction {

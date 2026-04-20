@@ -1,0 +1,11 @@
+services:
+  lab_benchmarking:
+    build: .
+    container_name: asymptotic_chamber
+    volumes:
+      - .:/usr/src/firewall_assintotico
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'        # Garante que o motor rode em um único núcleo
+          memory: 512M       # Testa se o Merge Sort (memória extra) estoura o limite
